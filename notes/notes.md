@@ -105,11 +105,11 @@ Tipos escalares:
 - Boolean.
 - Integer.
 - Float / Double.
-    ´<?php
+    ´´´<?php
     $a = 12.24; 
     $b = 1.5e3; 
     $c = 7E-10;
-    ?>´
+    ?>´´´
 - Strings.
   - Representa una cadena de caracteres.
   - Existen 4 formas de representar una cadena. Las 2 principales son usando comillas simples o comillas dobles.
