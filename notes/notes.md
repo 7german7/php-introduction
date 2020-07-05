@@ -57,7 +57,23 @@ A pesar de que el origen de estos programas de código abierto no fue específic
 
 El término fue ampliamente promocionado por el editor de la editorial O'Reilly, Dale Dougherty, a sugerencia de David Axmark y Monty Widenius, desarrolladores de MySQL; la influencia de dicha editorial en el mundo del software libre hizo que el acrónimo se popularizara rápidamente en todo el mundo.
 
+## Revisando el template que usaremos
+
+¿Dónde guardar el template de esta clase?
+
+- Descarga los archivos en tu computadora (encuentra el repositorio en pestaña de archivos).
+- Ingresa a htdocs dentro de XAMPP. Debe aparecer: C:/xampp/htdocs/
+- Crea y nombra una nueva carpeta. (ejemplo: cursophp)
+- Copia los archivos del template (index.html y style.css).
+- Escribe la ruta en tu navegador localhost/cursophp (usa el nombre que estableciste para tu carpeta).
+
+*Nota*: recuerda activar Apache y MySQL en el panel de control de XAMPP.
+
+Gracias a @jmacalupur por este aporte.
+
 # Consideraciones
 
 - Entornos de producción (XAMPP, LAMP, AWS).
 - Interprete de PHP.
+
+
