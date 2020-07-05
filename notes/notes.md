@@ -191,7 +191,7 @@ Tipos especiales:
     ?>
     ```
 
-# Arreglos
+## Arreglos
 
 Como vimos en la clase anterior almacenamos datos en una variable, ahora trataremos de almacenar más datos en una misma variable.
 
@@ -203,7 +203,7 @@ La estructura de arreglos en PHP es conocida como mapa, lo que quiere decir que 
 
 Algo que debes saber es que en PHP podrás almacenar diferentes tipos de datos en un mismo arreglo.
 
-# Consideraciones
+## Consideraciones
 
 - Entornos de producción (XAMPP, LAMP, AWS).
 - Interprete de PHP.
