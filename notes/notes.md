@@ -9,6 +9,7 @@
 5. [Sintaxis de PHP](#Sintaxis-de-PHP)
 6. [Variables tipos de datos y cadenas](#Variables-tipos-de-datos-y-cadenas)
 7. [Tipos de Datos en PHP](#Tipos-de-Datos-en-PHP)
+8. [Arreglos](#Arreglos)
 
 ## Presentación del curso
 
@@ -190,10 +191,19 @@ Tipos especiales:
     ?>
     ```
 
+# Arreglos
+
+Como vimos en la clase anterior almacenamos datos en una variable, ahora trataremos de almacenar más datos en una misma variable.
+
+Estas variables que almacenan más de un dato se conocen como arreglos y su sintaxis se va a indicar con [ ] (corchetes).
+
+PHP utiliza índices para localizar a los elementos dentro de la variable.
+
+La estructura de arreglos en PHP es conocida como mapa, lo que quiere decir que tiene una composición de llave valor. Además, un arreglo puede contener más arreglos y cada uno de ellos seguirá la misma estructura.
+
+Algo que debes saber es que en PHP podrás almacenar diferentes tipos de datos en un mismo arreglo.
 
 # Consideraciones
 
 - Entornos de producción (XAMPP, LAMP, AWS).
 - Interprete de PHP.
-
-
