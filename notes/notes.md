@@ -39,6 +39,24 @@ Para trabajar con PHP instalaremos un entorno de desarrollo llamado XAMPP, no es
 - Base de Datos.
 - Cliente para acceder a la BD.
 
+# Setup y Herramientas
+
+- XAMPP (Cualquier OS, Apache, MariaDB, PHP y Perl).
+- MariaDB es una derivación de MySQL.
+
+LAMP es el acrónimo usado para describir un sistema de infraestructura de internet que usa las siguientes herramientas:
+
+- Linux, el sistema operativo; En algunos casos también se refiere a LDAP.
+- Apache, el servidor web;
+- MySQL/MariaDB, el gestor de bases de datos;
+- PHP, el lenguaje de programación.
+
+La combinación de estas tecnologías es usada principalmente para definir la infraestructura de un servidor web, utilizando un paradigma de programación para el desarrollo del sistema .
+
+A pesar de que el origen de estos programas de código abierto no fue específicamente diseñado para trabajar entre sí, la combinación se popularizó debido a su bajo coste de adquisición y ubicuidad de sus componentes (ya que vienen pre-instalados en la mayoría de las distribuciones linux). Cuando son combinados, representan un conjunto de soluciones que proporcionan servidores de aplicaciones.
+
+El término fue ampliamente promocionado por el editor de la editorial O'Reilly, Dale Dougherty, a sugerencia de David Axmark y Monty Widenius, desarrolladores de MySQL; la influencia de dicha editorial en el mundo del software libre hizo que el acrónimo se popularizara rápidamente en todo el mundo.
+
 # Consideraciones
 
 - Entornos de producción (XAMPP, LAMP, AWS).
