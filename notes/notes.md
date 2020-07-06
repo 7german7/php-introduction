@@ -19,6 +19,7 @@
 15. [Funciones](#Funciones)
 16. [Agregando archivos externos](#Agregando-archivos-externos)
 17. [Programación Orientada a Objetos](#Programación-Orientada-a-Objetos)
+18. [Constructor y Métodos](#Constructor-y-Métodos)
 
 ## Presentación del curso
 
@@ -358,6 +359,12 @@ Una clase es una plantilla o definición de algo. Y una instancia es la represen
 Encapsulamiento será el nivel de visibilidad que queramos darle a alguna variable, para ello podemos utilizar los modificadores de acceso private, public y protected.
 
 Con la palabra reservada this estaremos haciendo referencia a la variable que pertenece a la clase.
+
+## Constructor y Métodos
+
+El método constructor nos permitirá inicializar valores por default, así como también pasar datos como parámetro al momento de inicializar un objeto.
+
+Todas las funciones que tienen __ antes del nombre de la función se conocen como métodos mágicos, investiga más y crea un tutorial en la sección de Tutoriales del curso.
 
 ## Consideraciones
 
