@@ -11,6 +11,9 @@
 7. [Tipos de Datos en PHP](#Tipos-de-Datos-en-PHP)
 8. [Arreglos](#Arreglos)
 9. [Condicionales y Ciclos](#Condicionales-y-Ciclos)
+10. [Ejercicios Arreglos](#Ejercicios-Arreglos)
+11. [While vs. Do While](#While-vs-Do-While)
+12. [Operadores, Condicionales, Continue y Break](#Operadores,-Condicionales,-Continue-y-Break)
 
 ## Presentación del curso
 
@@ -217,7 +220,7 @@ Hemos agregado los jobs de forma manual accediendo al arreglo a través de sus �
 
 ## Ejercicios Arreglos
 
-## While vs. Do While
+## While vs Do While
 
 ### Ciclos
 
@@ -251,7 +254,7 @@ La principal diferencia es que el ciclo do while garantiza que el código intern
 http://php.net/manual/es/control-structures.while.php
 http://php.net/manual/es/control-structures.do.while.php
 
-### foreach
+### Foreach
 
 El ciclo foreach nos brinda una solución simple para iterar sobre los valores de un arreglo, la sintaxis es la siguiente:
 
@@ -268,15 +271,37 @@ En esta sintaxis nos encontramos con 4 partes:
 - La palabra “as” seguido de un nombre de variable que usaremos para acceder al elemento del arreglo que estamos accediendo, esta variable no debe existir previamente y solo la podrán usar dentro de este bloque. En el ejemplo es $valor.
 - Entre llaves “{ }” todas las acciones que queremos repetir, en el momento en que se ejecute el ciclo la variable que definimos para iterar (en el ejemplo $valor) ya existe y podrá ser usada en esta sección, piensa que el valor de esta variable estará cambiando en cada iteración.
 
+
+Suponiendo que en el ejemplo anterior $array = [‘uno’, ‘dos’, ‘tres’], el ciclo se repetirá 3 veces y en cada iteración la variable $valor contendrá el elemento del arreglo correspondiente, es decir, en la primera iteración $valor será igual a ‘uno’, en la segunda $valor será igual a ‘dos’ y en la tercera $valor será igual a ‘tres’.
+
+Existe una sintaxis alternativa que nos permite no solo conocer el valor, también nos permitirá conocer la llave, de este modo tendremos acceso tanto a la llave como al valor del elemento del arreglo:
+
 ```
 foreach ($array as $llave => $valor) {
     sentencias que pueden usar $llave y $valor
 }
 ```
 
-Suponiendo que en el ejemplo anterior $array = [‘uno’, ‘dos’, ‘tres’], el ciclo se repetirá 3 veces y en cada iteración la variable $valor contendrá el elemento del arreglo correspondiente, es decir, en la primera iteración $valor será igual a ‘uno’, en la segunda $valor será igual a ‘dos’ y en la tercera $valor será igual a ‘tres’.
+Aprovechemos para practicar y veamos más sobre condiciones, en PHP tenemos el operador de comparación (==) y diferente de (!=).
 
-Existe una sintaxis alternativa que nos permite no solo conocer el valor, también nos permitirá conocer la llave, de este modo tendremos acceso tanto a la llave como al valor del elemento del arreglo:
+Tenemos la sentencia continue la cuál al ejecutarse hará que se itere a la siguiente línea del arreglo. Y la sentencia break que hará que el ciclo se termine.
+
+http://php.net/manual/es/control-structures.foreach.php
+
+## Operadores, Condicionales, Continue y Break
+
+En PHP existen cuatro tipos principales de operadores:
+
+- Aritméticos.
+- Asignación.
+- Condicionales.
+- Incremento.
+    - ++$a 	Pre-incremento: Incrementa $a en uno, y luego retorna $a.
+    - $a++ 	Post-incremento: Retorna $a, y luego incrementa $a en uno.
+    - --$a 	Pre-decremento: Decrementa $a en uno, luego retorna $a.
+    - $a-- 	Post-decremento: Retorna $a, luego decrementa $a en uno.
+
+Fuente: [php.net/operadores](#https://www.php.net/manual/en/language.operators.php)
 
 ## Consideraciones
 
