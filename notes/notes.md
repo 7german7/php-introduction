@@ -15,6 +15,10 @@
 11. [While vs. Do While](#While-vs-Do-While)
 12. [Operadores, Condicionales, Continue y Break](#Operadores,-Condicionales,-Continue-y-Break)
 13. [Operadores](#Operadores)
+14. [Ejercicios de Operadores](#Ejercicios-de-Operadores)
+15. [Funciones](#Funciones)
+16. [Agregando archivos externos](#Agregando-archivos-externos)
+17. [Programación Orientada a Objetos](#Programación-Orientada-a-Objetos)
 
 ## Presentación del curso
 
@@ -324,6 +328,36 @@ Te dejo el enlace por si quieres consultar más información al respecto. [Prece
 Ahora continuemos hablando sobre los tipos de operadores, algunos ya los vimos, pero de igual forma vamos a reforzarlos enfocándonos en los más importantes.
 
 Fuente: [php.net/operadores](#https://www.php.net/manual/en/language.operators.php)
+
+## Ejercicios-de-Operadores
+
+## Funciones
+
+Las funciones en PHP se denotan por la palabra reservada function seguida por el nombre de la función, las funciones nos servirán para llamar y reutilizar código en nuestros proyectos.
+
+Cuando trabajemos con funciones es muy importante cuidar el scope (alcance) de las variables pues, algunas podrían entrar en su scope y otras no.
+
+Las funciones en PHP pueden o no regresar un dato particular. Si deseamos hacerlo podemos indicarlo con la palabra reservada return.
+
+RETO: Utiliza condicionales para validar los años que tengan valor cero.
+
+## Agregando archivos externos
+
+Organizaremos mejor nuestro código para ello lo separaremos en otro archivo llamado jobs.php.
+
+Usaremos la palabra reservada include para hacer que el archivo index incluya el archivo jobs.php, si lo encuentra lo incluye, pero si no nos mostrará un warning. Existe otro llamado require que si no lo encuentra nos muestra un error en todo el archivo.
+
+Los métodos include y require ejecutan el código del archivo cada vez que lo incluyen, esto puede traer errores en la ejecución de tu código si tienes archivos con funciones pues te dirá que no puedes declarar dos veces una función con el mismo nombre. Para resolver esto existen include_once y require_once que obligan a incluir una sola vez el archivo.
+
+## Programación Orientada a Objetos
+
+La programación orientada a objetos nos ayudará a estructurar mejor nuestros programas. PHP a partir de su versión 5 tiene implementaciones orientadas a objetos, lo que lo hace tener código más reutilizable y mantenible.
+
+Una clase es una plantilla o definición de algo. Y una instancia es la representación concreta de la clase.
+
+Encapsulamiento será el nivel de visibilidad que queramos darle a alguna variable, para ello podemos utilizar los modificadores de acceso private, public y protected.
+
+Con la palabra reservada this estaremos haciendo referencia a la variable que pertenece a la clase.
 
 ## Consideraciones
 
