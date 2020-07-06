@@ -14,6 +14,7 @@
 10. [Ejercicios Arreglos](#Ejercicios-Arreglos)
 11. [While vs. Do While](#While-vs-Do-While)
 12. [Operadores, Condicionales, Continue y Break](#Operadores,-Condicionales,-Continue-y-Break)
+13. [Operadores](#Operadores)
 
 ## Presentación del curso
 
@@ -300,6 +301,27 @@ En PHP existen cuatro tipos principales de operadores:
     - $a++ 	Post-incremento: Retorna $a, y luego incrementa $a en uno.
     - --$a 	Pre-decremento: Decrementa $a en uno, luego retorna $a.
     - $a-- 	Post-decremento: Retorna $a, luego decrementa $a en uno.
+
+## Operadores
+
+Antes de continuar hablando de operadores es importante mencionar que existe un concepto conocido como **precedencia de operadores** el cual nos permitirá saber en qué orden se deben ejecutar los operadores que se encuentren en una sola sentencia.
+
+Por ejemplo, en la sentencia:
+
+```
+1 + 2 * 3
+```
+
+Se ejecutará primero la operación 2 * 3
+Luego se ejecutará la suma con 1
+
+Esto es debido a que * tiene más valor en la precedencia que el +.
+
+Una forma sencilla de controlar la precedencia es utilizando () paréntesis, de esta forma podemos forzar el orden que nosotros queramos, por ejemplo (1 + 2) * 3 será una versión diferente y se ejecutará primero la suma y luego la multiplicación.
+
+Te dejo el enlace por si quieres consultar más información al respecto. [Precedencia](#http://php.net/manual/es/language.operators.precedence.php)
+
+Ahora continuemos hablando sobre los tipos de operadores, algunos ya los vimos, pero de igual forma vamos a reforzarlos enfocándonos en los más importantes.
 
 Fuente: [php.net/operadores](#https://www.php.net/manual/en/language.operators.php)
 
