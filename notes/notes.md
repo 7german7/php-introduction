@@ -401,7 +401,7 @@ Esto nos permite tener mejor organizado el proyecto.
 
 Para declarar un espacio de nombres privado se utiliza la palabra reservada namespace.
 
-- Evita la colisión de nombres.
+- Evita la colisión de nombres (de clases).
 
 ## Consideraciones
 
