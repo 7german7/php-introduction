@@ -20,6 +20,9 @@
 16. [Agregando archivos externos](#Agregando-archivos-externos)
 17. [Programación Orientada a Objetos](#Programación-Orientada-a-Objetos)
 18. [Constructor y Métodos](#Constructor-y-Métodos)
+19. [Herencia](#Herencia)
+21. [Interfaces](#Interfaces)
+22. [Namespaces](#Namespaces)
 
 ## Presentación del curso
 
@@ -365,6 +368,40 @@ Con la palabra reservada this estaremos haciendo referencia a la variable que pe
 El método constructor nos permitirá inicializar valores por default, así como también pasar datos como parámetro al momento de inicializar un objeto.
 
 Todas las funciones que tienen __ antes del nombre de la función se conocen como métodos mágicos, investiga más y crea un tutorial en la sección de Tutoriales del curso.
+
+## Herencia
+
+La herencia permite que ciertas clases tengan características de una clase padre. Esta clase se llamará hijo.
+
+Como una buena práctica en PHP lo mejor es tener dividido el código en diferentes archivos. Justo esto es lo que haremos con la definición de la clase Jobs que ahora deberá tener el mismo nombre del archivo, este será BaseElement.php.
+
+Ahora en otro archivo crearemos la clase Job que será hija de BaseElement.php. La herencia la expresaremos con la palabra reservada extends.
+
+Es muy conveniente utilizar require_once cuando queremos utilizar herencia e incluir clases que están en otros archivos.
+
+Dentro de nuestra clase hijo podemos sobrescribir algún método del padre, esto es un concepto que conocemos como polimorfismo. Lo que polimorfismo quiere decir es que tendremos un método que va a funcionar de acuerdo con su contexto donde es llamado.
+
+Si tenemos propiedades con la palabra private en nuestra clase padre, desde nuestra clase hija no podremos acceder a esta propiedad, pero si queremos que siga siendo privada y que las clases hijas tengan acceso podemos usar la palabra clave protected.
+
+## Interfaces
+
+Las interfaces se pueden ver como un contrato o un acuerdo en el que se pueden estandarizar ciertas cosas.
+
+La palabra reservada que utilizaremos para declarar una interfaz será interface. Y la que nos indicará que estamos usando una interfaz en una clase será implements.
+
+Usando Type Hinting estableceremos el tipo de dato que esperamos ya sea una clase o un tipo de dato específico.
+
+La herencia en PHP será de forma sencilla es decir solo que podrá hacer herencia de una sola clase, por lo contrario, con las interfaces que sí podemos implementar varias al mismo tiempo.
+
+## Namespaces
+
+Esta es una forma de mantener únicos los nombres de los archivos en el mismo directorio.
+
+Esto nos permite tener mejor organizado el proyecto.
+
+Para declarar un espacio de nombres privado se utiliza la palabra reservada namespace.
+
+- Evita la colisión de nombres.
 
 ## Consideraciones
 
