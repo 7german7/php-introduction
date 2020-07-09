@@ -21,6 +21,7 @@
 17. [Programación Orientada a Objetos](#Programación-Orientada-a-Objetos)
 18. [Constructor y Métodos](#Constructor-y-Métodos)
 19. [Herencia](#Herencia)
+20. [Herencia y Polimorfismo](#Herencia-y-Polimorfismo)
 21. [Interfaces](#Interfaces)
 22. [Namespaces](#Namespaces)
 
@@ -382,6 +383,8 @@ Es muy conveniente utilizar require_once cuando queremos utilizar herencia e inc
 Dentro de nuestra clase hijo podemos sobrescribir algún método del padre, esto es un concepto que conocemos como polimorfismo. Lo que polimorfismo quiere decir es que tendremos un método que va a funcionar de acuerdo con su contexto donde es llamado.
 
 Si tenemos propiedades con la palabra private en nuestra clase padre, desde nuestra clase hija no podremos acceder a esta propiedad, pero si queremos que siga siendo privada y que las clases hijas tengan acceso podemos usar la palabra clave protected.
+
+## Herencia y Polimorfismo
 
 ## Interfaces
 

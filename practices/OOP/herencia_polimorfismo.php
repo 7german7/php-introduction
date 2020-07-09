@@ -45,6 +45,7 @@ class Book extends Product {
     }
 
     public function showBook(){
+        echo '<h1>Datos del Libro</h1>';
         echo 'ID: '.$this->id.'<br>';
         echo 'Title: '.$this->title.'<br>';
         echo 'Price: '.$this->price.'$<br>';
@@ -60,12 +61,32 @@ class Album extends Product {
     public $duration;
     public $genere;
 
-    public function getProfit() {
-        return $this->price * (0.1 + $this->profitBonus);
+    public function __construct($id, $title, $price, $description, $company, $artist, $duration, $genere){
+        parent::__construct($id, $title, $price, $description);
+        $this->company = $company;
+        $this->artist = $artist;
+        $this->duration = $duration;
+        $this->genere = $genere;
+    }
+
+    public function showAlbum(){
+        echo '<h1>Datos del Album</h1>';
+        echo 'ID: '.$this->id.'<br>';
+        echo 'Title: '.$this->title.'<br>';
+        echo 'Price: '.$this->price.'$<br>';
+        echo 'Description: '.$this->description.'<br>';
+        echo 'Company: '.$this->company.'<br>';
+        echo 'Artist: '.$this->artist.'<br>';
+        echo 'Duration: '.$this->duration.'<br>';
+        echo 'Genere: '.$this->genere.'<br>';
     }
 }
 
-$book1 = new Book(1,'La culpa es de la vaca', 150, 'Libro de la culpa es de la vaca Edicion #1', 'El autor', 100);
+$book1 = new Book(1,'La culpa es de la vaca', 100, 'Libro de la culpa es de la vaca Edicion #1', 'El autor', 100);
 $book1->showBook();
 echo 'Ganancia: '.$book1->getProfit().'$';
+
+$album1 = new Album(2, 'Emanuel', 100, 'El mejor Album', 'GraceHouse Music','Christine D’Clario', 60, 'Cristiano/góspel');
+$album1->showAlbum();
+echo 'Ganancia: '.$album1->getProfit().'$';
 ?>
