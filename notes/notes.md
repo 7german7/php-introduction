@@ -25,6 +25,7 @@
 21. [Interfaces](#Interfaces)
 22. [Namespaces](#Namespaces)
 23. [PSR y PHPFIG](#PSR-y-PHPFIG)
+24. [Composer](#Composer)
 
 ## Presentación del curso
 
@@ -412,6 +413,12 @@ Para declarar un espacio de nombres privado se utiliza la palabra reservada name
 Varios programadores se unieron para crear un grupo llamado PHP-FIG con el objetivo de avanzar en la interoperabilidad de librerías en PHP. Este grupo creo el PSR que son recomendaciones y estándares para tu código de PHP.
 
 **PHPFIG**: es un grupo de desarrolladores que tienen como objetivo lograr avanzar en la interoperabilidad de las librerías y las herramientas que tenemos en PHP. **PSR** (PHP Standars Recommendations): han sido diferentes estándares que hemos ido generando a lo largo del tiempo para poder lograr esta interoperabilidad en nuestros proyectos.
+
+## Composer
+
+Vamos a añadir a nuestro proyecto un manejador de dependencias de PHP llamado Composer, no solo nos ayudara a traer librerías de tercero al proyecto además va a implementar el estándar PSR4 que nos va a permitir tener el cargado de archivos automático.
+
+composer.phar será un documento que nos servirá para manejar las dependencias en PHP, esta va muy de la mano con otro archivo llamado composer.json.
 
 ## Consideraciones
 
