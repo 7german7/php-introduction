@@ -24,6 +24,7 @@
 20. [Herencia y Polimorfismo](#Herencia-y-Polimorfismo)
 21. [Interfaces](#Interfaces)
 22. [Namespaces](#Namespaces)
+23. [PSR y PHPFIG](#PSR-y-PHPFIG)
 
 ## Presentación del curso
 
@@ -405,6 +406,12 @@ Esto nos permite tener mejor organizado el proyecto.
 Para declarar un espacio de nombres privado se utiliza la palabra reservada namespace.
 
 - Evita la colisión de nombres (de clases).
+
+## PSR y PHPFIG
+
+Varios programadores se unieron para crear un grupo llamado PHP-FIG con el objetivo de avanzar en la interoperabilidad de librerías en PHP. Este grupo creo el PSR que son recomendaciones y estándares para tu código de PHP.
+
+**PHPFIG**: es un grupo de desarrolladores que tienen como objetivo lograr avanzar en la interoperabilidad de las librerías y las herramientas que tenemos en PHP. **PSR** (PHP Standars Recommendations): han sido diferentes estándares que hemos ido generando a lo largo del tiempo para poder lograr esta interoperabilidad en nuestros proyectos.
 
 ## Consideraciones
 
