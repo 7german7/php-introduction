@@ -26,6 +26,7 @@
 22. [Namespaces](#Namespaces)
 23. [PSR y PHPFIG](#PSR-y-PHPFIG)
 24. [Composer](#Composer)
+25. [ORM - Object Relational Mapping](#ORM)
 
 ## Presentación del curso
 
@@ -419,6 +420,30 @@ Varios programadores se unieron para crear un grupo llamado PHP-FIG con el objet
 Vamos a añadir a nuestro proyecto un manejador de dependencias de PHP llamado Composer, no solo nos ayudara a traer librerías de tercero al proyecto además va a implementar el estándar PSR4 que nos va a permitir tener el cargado de archivos automático.
 
 composer.phar será un documento que nos servirá para manejar las dependencias en PHP, esta va muy de la mano con otro archivo llamado composer.json.
+
+## ORM
+
+Un ORM, que significa Object Relational Mapping, es un concepto en el cual vamos a crear dentro de nuestro código algunos modelos basados en las tablas de nuestra base de datos.
+
+Una principal característica de un ORM es que hace más transparente las conexiones a PostgreSQL y MySQL, además nos protege de algunas vulnerabilidades de SQL y facilita algunas validaciones a la información.
+
+- **PDO** (PHP Data Object)
+Permite estandarizar como trabajar con diferentes sistemas manejadores de bases de datos.
+
+- **ORM** (Object Relational Mapping)
+Permite crear modelos/objetos basados en las tablas que tenemos en nuestra base de datos. Esto permite que la conexión sea más transparente con MySQL/PostgreSQL. Tiene ya validaciones básicas.
+
+## Formularios
+
+Hagamos un template utilizando el código HTML que tenemos, le pondremos como título addJob.php
+
+Podemos enviar información desde un formulario a través de diferentes métodos, GET o POST. Para acceder a esta información desde PHP llamaremos a $_GET y $_POST, estas son variables super globales. Recuerda que para hacer debugging de una variable usamos la función var_dump.
+
+## Eloquent
+
+[Packagist](#https://packagist.org/) es un sitio donde encontraras múltiples librerías de terceros que puedes integrar a tus proyectos mediante composer, de aquí añadiremos nuestra herramienta para la conexión a base de datos. Realizamos la conexión con la base de datos y usaremos Eloquent como nuestro ORM. Para que funcionen los modelos debemos hacer una clase que herede de Model. Una vez estén listos los modelos, usando la variable super global $_POST conectaremos la información del formulario con nuestro modelo para añadirla información a la base de datos.
+
+
 
 ## Consideraciones
 
